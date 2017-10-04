@@ -25,6 +25,12 @@ var bio = {
         $("#topContacts").append(HTMLtwitter.replace("%data%", bio.contacts.twitter));
         $("#topContacts").append(HTMLlocation.replace("%data%", bio.contacts.location));
         
+        $("#footerContacts").append(HTMLmobile.replace("%data%", bio.contacts.mobile));
+        $("#footerContacts").append(HTMLemail.replace("%data%", bio.contacts.email));
+        $("#footerContacts").append(HTMLgithub.replace("%data%", bio.contacts.github));
+        $("#footerContacts").append(HTMLtwitter.replace("%data%", bio.contacts.twitter));
+        $("#footerContacts").append(HTMLlocation.replace("%data%", bio.contacts.location));
+        
         $("#header").append(HTMLbioPic.replace("%data%", bio.biopic));
         $("#header").append(HTMLwelcomeMsg.replace("%data%", bio.welcomeMessage));
         $("#header").append(HTMLskillsStart);
@@ -155,3 +161,6 @@ bio.display();
 work.display();
 project.display();
 education.display();
+
+
+$("#mapDiv").append(googleMap);
