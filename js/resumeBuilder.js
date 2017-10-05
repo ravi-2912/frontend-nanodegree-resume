@@ -151,10 +151,16 @@ var project = {
     }
 };
 
+var addMaps = function (API_key) {
+    $("head").append("<script src=\"http://maps.googleapis.com/maps/api/js?libraries=places\"></script>");
+    var key = "<script src=\"http://maps.googleapis.com/maps/api/js?libraries=places&key=[YOUR_API_KEY]\"></script>";
+    key.replace("[YOUR_API_KEY]", API_key);     
+    $("body").append(key);
+    $("#mapDiv").append(googleMap);    
+};
+
 bio.display();
 work.display();
 project.display();
 education.display();
-
-
-$("#mapDiv").append(googleMap);
+addMaps("AIzaSyB0JR146h4Qidqhjm_KriNeOjjOlxC3FBI");
