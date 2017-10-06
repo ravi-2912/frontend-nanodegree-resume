@@ -14,6 +14,15 @@ h6 {
   font-family: "Roboto", sans-serif;
 }
 
+[class*="fontawesome-"]:before {
+  display: inline-block;
+  font-family: 'FontAwesome', sans-serif;
+  font-size: 18px;
+  text-shadow: 3px 3px 3px black;
+  width: 2.5em;
+}
+
+
 .clear-fix {
   overflow: auto;
 }
@@ -175,17 +184,53 @@ span {
   text-align: center;
 }
 
+.layout {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.layout-inner {
+  width: 70%;
+}
+
+#projects {
+  order: 3;
+}
+
+#education {
+  width: 30%;
+  background: lightgray;
+}
+
+#mapDiv {
+  display: block;
+  float: none;
+  clear: both;
+}
+
 /* Media queries to handle various device widths */
 
 @media only screen and (max-width: 1024px) {
   #lets-connect {
     margin-top: 5%;
   }
+
+  .layout-inner {
+    width: 60%;
+  }
+
+  #education {
+    width: 40%;
+  }
 }
 
 @media only screen and (max-width:900px) {
   .biopic {
     width: 175px;
+  }
+
+  .layout-inner, #education {
+    width: 100%;
   }
 }
 
