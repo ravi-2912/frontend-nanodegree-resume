@@ -22,6 +22,8 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
   <!-- Tells the browser what the title of this page should be. -->
   <title>Resume</title>
 
+  <!-- Zocial CSS -->
+  <link rel="stylesheet" href="http://weloveiconfonts.com/api/?family=fontawesome" />
   <!-- Load the page styles. -->
   <link href="css/style.css" rel="stylesheet">
 
@@ -46,15 +48,21 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
       <ul id="topContacts" class="flex-box"></ul>
     </div>
     <div style="clear: both;"></div>
-    <div id="workExperience" class="gray">
-      <h2>Work Experience</h2>
+    <div class="layout">
+        <div class="layout layout-inner">
+            <div id="workExperience" class="gray">
+              <h2>Work Experience</h2>
+            </div>
+            <div id="projects">
+              <h2>Projects</h2>
+            </div>
+        </div>
+        
+        <div id="education" class="gray">
+          <h2>Education</h2>
+        </div>
     </div>
-    <div id="projects">
-      <h2>Projects</h2>
-    </div>
-    <div id="education" class="gray">
-      <h2>Education</h2>
-    </div>
+    
     <div id="mapDiv">
       <h2>Where I've Lived and Worked</h2>
     </div>
